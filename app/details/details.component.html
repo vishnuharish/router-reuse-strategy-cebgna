@@ -1,0 +1,14 @@
+<h1> Names </h1>
+<p> Change the state of this component and navigate away and come 
+  <a href="" (click)="goBack($event)">back</a>
+</p>
+<pre>{{names | json}}</pre>
+
+<input type="text" [(ngModel)]="name">
+
+<button (click)="addName(name)">
+  add 
+</button>
+
+
+<a [routerLink]="['/secondPage']"> navigate to second page </a>
